@@ -9,10 +9,16 @@ const pages = [{ title: 'Home', link: '/' }, { title: 'St. Joseph', link: '/stjo
 const theme = createTheme({
   palette: {
     primary: {
-      main:'#287DC4'
+      main:'#287DC4',
+      dark: '#074C86'
     },
     background: {
       default: '#FEFFFE'
+    }
+  },
+  typography: {
+    h4: {
+      fontSize: "14px"
     }
   }
 })

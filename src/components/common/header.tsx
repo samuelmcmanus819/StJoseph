@@ -6,12 +6,26 @@ import Link from 'next/link';
 
 const DesktopHeader = (props: headerProps) => {
   const [sacramentsExpanded, setSacramentsExpanded] = useState(false);
+  const [educationExpanded, setEducationExpanded] = useState(false);
+  const [layMinistriesExpanded, setLayMinistriesExpanded] = useState(false);
 
-  const sacramentsClicked = () => {
-    setSacramentsExpanded(!sacramentsExpanded)
+  const openSacraments = () => {
+    setSacramentsExpanded(true)
   }
   const closeSacraments = () => {
     setSacramentsExpanded(false)
+  }
+  const openEducation = () => {
+    setEducationExpanded(true)
+  }
+  const closeEducation = () => {
+    setEducationExpanded(false)
+  }
+  const openLayMinistries = () => {
+    setLayMinistriesExpanded(true)
+  }
+  const closeLayMinistries = () => {
+    setLayMinistriesExpanded(false)
   }
 
   return (
@@ -56,24 +70,24 @@ const DesktopHeader = (props: headerProps) => {
         <Link href="/"><Button sx={{color: 'white', position: 'absolute', right: 635, top: 15,}}>Home</Button></Link>
         <Link href="/stjoseph"><Button sx={{color: 'white', position: 'absolute', right: 535, top: 15,}}>St. Joseph</Button></Link>
         <Link href="/ststephen"><Button sx={{color: 'white', position: 'absolute', right: 425, top: 15,}}>St. Stephen</Button></Link>
-        <Accordion variant="outlined" sx={{display: 'block', justifyContent: 'center', backgroundColor: '#287DC4', color: 'white', position: 'absolute', right: 290, zIndex: 5, top: 10, border: 0}}>
+        <Accordion expanded={educationExpanded}  onMouseOver={openEducation} onMouseOut={closeEducation}variant="outlined" sx={{display: 'block', justifyContent: 'center', backgroundColor: 'primary.main', color: 'white', position: 'absolute', right: 290, zIndex: 5, top: 10, border: 0}}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{color: 'white'}} />}
             aria-controls="panel1a-content"
           >
-            <Typography sx={{fontSize: '14px', color: 'white'}}>EDUCATION</Typography>
+            <Typography variant="h4" sx={{color: 'white'}}>EDUCATION</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{display: 'flex', flexDirection: 'column'}}>
             <Link href="/education/cce"><Button sx={{color: 'white', textAlign: 'start'}}>CCE</Button></Link>
             <Link href="/education/rcia"><Button sx={{color: 'white', textAlign: 'start'}}>RCIA</Button></Link>
           </AccordionDetails>
         </Accordion> 
-        <Accordion variant="outlined" expanded={sacramentsExpanded} onClick={sacramentsClicked} sx={{display: 'block', justifyContent: 'center', backgroundColor: '#287DC4', color: 'white', position: 'absolute', right: 145, zIndex: 5, top: 10, border: 0}}>
+        <Accordion variant="outlined" expanded={sacramentsExpanded} onMouseOver={openSacraments} onMouseOut={closeSacraments} sx={{display: 'block', justifyContent: 'center', backgroundColor: 'primary.main', color: 'white', position: 'absolute', right: 145, zIndex: 5, top: 10, border: 0}}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{color: 'white'}} />}
             aria-controls="panel1a-content"
           >
-            <Typography sx={{fontSize: '14px', color: 'white'}}>SACRAMENTS</Typography>
+            <Typography variant="h4" sx={{color: 'white'}}>SACRAMENTS</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{display: 'flex', flexDirection: 'column'}}>
             <Link href="/sacraments/annointing"><Button onClick={closeSacraments} sx={{color: 'white'}}>Annointing <br></br> of the Sick</Button></Link>
@@ -85,12 +99,12 @@ const DesktopHeader = (props: headerProps) => {
             <Link href="/sacraments/weddings"><Button onClick={closeSacraments} sx={{color: 'white'}}>Weddings</Button></Link>
           </AccordionDetails>
         </Accordion> 
-        <Accordion variant="outlined" sx={{display: 'block', justifyContent: 'center', backgroundColor: '#287DC4', color: 'white', position: 'absolute', right: 0, zIndex: 5, top: 10, border: 0}}>
+        <Accordion expanded={layMinistriesExpanded} onMouseOver={openLayMinistries} onMouseOut={closeLayMinistries} variant="outlined" sx={{display: 'block', justifyContent: 'center', backgroundColor: 'primary.main', color: 'white', position: 'absolute', right: 0, zIndex: 5, top: 10, border: 0}}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{color: 'white'}} />}
             aria-controls="panel1a-content"
           >
-            <Typography sx={{fontSize: '14px', color: 'white'}}>LAY MINISTRIES</Typography>
+            <Typography variant="h4" sx={{color: 'white'}}>LAY MINISTRIES</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{display: 'flex', flexDirection: 'column'}}>
             <Link href="/layministries/kc"><Button sx={{color: 'white', textAlign: 'start'}}>Knights of<br></br>Columbus</Button></Link>

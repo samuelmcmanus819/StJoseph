@@ -35,7 +35,7 @@ const Announcements = () => {
   }
   
   return (
-    <Box sx={{ backgroundColor: '#287DC4', width: '100%', pt: '4vh', pb: '6vh', color: '#fefffe', display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center' }}>
+    <Box sx={{ backgroundColor: 'primary.main', width: '100%', pt: '4vh', pb: '6vh', color: 'background.default', display: 'flex', flexDirection: 'column', textAlign: 'center', justifyContent: 'center' }}>
         <Typography sx={{fontSize: "xx-large", pb: '3vh'}}>
           What's Happening
         </Typography>
