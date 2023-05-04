@@ -9,7 +9,7 @@ export default function App ({ Component, pageProps }: AppProps) {
   const pages = ['Home', 'St. Joseph', 'St. Stephen', 'Sacraments', 'CCE', 'Knights of Colombus'];
 
   return (
-    <Box sx={{height: "100vh"}}>
+    <Box sx={{backgroundColor: "#D3D0D0"}}>
       <AppBar position="static">
         <Container maxWidth={false}>
           <Toolbar disableGutters>
