@@ -1,0 +1,3 @@
+type headerProps = {
+  pages: string[]
+}
