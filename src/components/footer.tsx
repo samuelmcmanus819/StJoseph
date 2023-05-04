@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <Box sx={{backgroundColor: "white", pt: { xs: 0, sm: "3vh" }, pb: { xs: "1vh", sm: 0 }, display: "flex", flexDirection: "column"}}>
+    <Box sx={{backgroundColor: "lightgray", pt: { xs: 0, sm: "3vh" }, pb: { xs: "1vh", sm: 0 }, display: "flex", flexDirection: "column"}}>
       <Box sx={{display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "center"}}>
         <Box sx={{width: { xs: "100%", md: "50%" }, textAlign: "center", pt: { xs: "2vh", sm: 0 }, pb: { xs: "1vh", sm: 0 }, pl: { xs: 0, sm: "15%"}}}>
           <Typography sx={{fontSize: "large", fontWeight: "bold"}}>

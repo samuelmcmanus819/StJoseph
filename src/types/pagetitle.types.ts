@@ -1,0 +1,3 @@
+type PageTitleProps = {
+  title: string
+}

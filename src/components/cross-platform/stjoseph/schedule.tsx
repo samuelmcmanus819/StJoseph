@@ -1,21 +1,12 @@
-import { Box, Grid, Typography } from "@mui/material"
+import { Box, Grid, Typography } from "@mui/material";
 
-const Schedule = () => {
+const StJosephSchedule = () => {
   return (
-      <Box sx={{direction: 'flex', flexDirection: 'column', px: '10%', width: '100%', pr: { md: '10%' }, py: '5vh'}}>
-        <Typography sx={{fontSize: "xx-large", borderBottom: .5, borderColor: '#074C86', pl: 2, display: { xs: 'none', md: 'block' }, color: '#074C86', fontWeight: 'bold'}} >
-          Mass and Reconciliation
-        </Typography>
+    <Box sx={{direction: 'flex', flexDirection: 'column', px: '15%', width: '100%', py: '5vh'}}>
         <Grid container sx={{mt: { xs: "0vh", md: "3vh"}, display: 'flex', justifyContent: 'center', textAlign: 'center'}}>
           <Grid xs={8} md={4} sx={{ py: "1vh" }}>
             <Typography sx={{fontSize: { xs: "x-large", md: "large", xl: "x-large" }, px: "2vh", fontWeight: "bold", color: '#074C86'}}>
-              St. Joseph Mass
-            </Typography>
-            <Typography sx={{mt: "1.15vh", fontWeight: "bold"}}>
-              Friday
-            </Typography>
-            <Typography sx={{mt: ".5vh"}}>
-              8:00 AM - English
+              Weekend Mass
             </Typography>
             <Typography sx={{mt: "1.15vh", fontWeight: "bold"}}>
               Saturday
@@ -35,13 +26,13 @@ const Schedule = () => {
           </Grid>
           <Grid xs={8} md={4} sx={{py: "1vh"}}>
             <Typography sx={{fontSize: { xs: "x-large", md: "large", xl: "x-large" }, px: "2vh", fontWeight: "bold", color: '#074C86'}}>
-              St. Stephen Mass
+              Weekday Mass
             </Typography>
             <Typography sx={{mt: "1.15vh", fontWeight: "bold"}}>
-              Saturday
+              Friday
             </Typography>
             <Typography sx={{mt: ".5vh"}}>
-              4:30 PM - English
+              8:00 AM - English
             </Typography>
           </Grid>
           <Grid xs={8} md={4} sx={{ py: "1vh" }}>
@@ -49,21 +40,15 @@ const Schedule = () => {
               Reconciliation
             </Typography>
             <Typography sx={{mt: "1.15vh", fontWeight: "bold"}}>
-              St. Stephen
+              Saturday
             </Typography>
             <Typography sx={{mt: ".5vh"}}>
-              4:00 PM - Saturday
-            </Typography>
-            <Typography sx={{mt: "1.15vh", fontWeight: "bold"}}>
-              St. Joseph
-            </Typography>
-            <Typography sx={{mt: ".5vh"}}>
-              6:30 PM - Saturday
+              6:30 PM
             </Typography>
           </Grid>
         </Grid>
       </Box>
-  )
+  );
 }
 
-export default Schedule;
+export default StJosephSchedule;

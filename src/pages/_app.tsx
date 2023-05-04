@@ -3,14 +3,15 @@ import type { AppProps } from 'next/app'
 import { AppBar, Box, Container, Toolbar } from '@mui/material';
 import MobileHeader from '@/components/mobile/header';
 import DesktopHeader from '@/components/desktop/header';
-import Home from '.';
+import Footer from '@/components/footer';
 
 export default function App ({ Component, pageProps }: AppProps) {
-  const pages = ['Home', 'St. Joseph', 'St. Stephen', 'Sacraments', 'CCE', 'Knights of Colombus'];
+  const pages = [{ title: 'Home', link: '/' }, { title: 'St. Joseph', link: '/stjoseph' }, { title: 'St. Stephen', link: '/ststephen' }, 
+                  { title: 'Sacraments', link: '/sacraments' }, { title: 'CCE', link: '/cce' }, { title: 'Lay Orders', link: '/' }];
 
   return (
-    <Box sx={{backgroundColor: "#D3D0D0"}}>
-      <AppBar position="static">
+    <Box sx={{backgroundColor: "#fefffe"}}>
+      <AppBar position="static" sx={{backgroundColor:'#287DC4'}}>
         <Container maxWidth={false}>
           <Toolbar disableGutters>
             <DesktopHeader pages={pages}/>
@@ -18,9 +19,9 @@ export default function App ({ Component, pageProps }: AppProps) {
           </Toolbar>
         </Container>
       </AppBar>
-      <Home />
+      {<Component {...pageProps} />}
+      <Footer />
     </Box>
-    
   );
 }
 

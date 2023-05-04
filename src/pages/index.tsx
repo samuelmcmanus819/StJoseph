@@ -2,7 +2,7 @@ import HomepageMainContent from '@/components/cross-platform/homepage/main';
 import DesktopCarousel from '@/components/desktop/homepage/carousel';
 import Footer from '@/components/footer';
 import MobileCarousel from '@/components/mobile/homepage/carousel';
-import { Box, Grid, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import 'react-slideshow-image/dist/styles.css'
 
 
@@ -14,7 +14,6 @@ export default function Home() {
       <DesktopCarousel images={images}/>
       <MobileCarousel images={images}/>
       <HomepageMainContent />
-      <Footer />
     </Box>
   )
 }

@@ -6,7 +6,7 @@ const MobileCarousel = (props: CarouselProps) => {
     <Box className="slide-container" sx={{display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' }}}>
       <Slide arrows={false}>
         {props.images.map((image)=> (
-          <img src={image} alt="" width="100%" height={300}/>
+          <img src={image} alt="" width="100%" height={500}/>
         ))} 
       </Slide>
     </Box>

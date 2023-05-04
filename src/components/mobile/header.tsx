@@ -52,7 +52,7 @@ const MobileHeader = (props: headerProps) => {
             textDecoration: 'none',
           }}
         >
-          St. Stephen the Martyr Mission
+          St. Stephen the Martyr Church
         </Typography>
       </Box>
       <Box sx={{ display: { xs: 'flex', sm: 'flex', md: 'flex', lg: 'none' }, ml: 'auto' }}>
@@ -85,8 +85,8 @@ const MobileHeader = (props: headerProps) => {
           }}
         >
           {props.pages.map((page) => (
-            <MenuItem key={page} onClick={handleCloseNavMenu}>
-              <Typography textAlign="center">{page}</Typography>
+            <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+              <Typography component="a" textAlign="center" href={page.link}>{page.title}</Typography>
             </MenuItem>
           ))}
         </Menu>

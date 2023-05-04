@@ -42,10 +42,11 @@ const DesktopHeader = (props: headerProps) => {
       <Box sx={{ display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex' }, ml: 'auto' }}>
         {props.pages.map((page) => (
           <Button
-            key={page}
+            key={page.title}
             sx={{ my: 2, color: 'white', display: 'block' }}
+            href={page.link}
           >
-            {page}
+            {page.title}
           </Button>
         ))}
       </Box>
