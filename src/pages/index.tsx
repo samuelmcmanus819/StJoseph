@@ -1,14 +1,24 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import { Box } from '@mui/material'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
 
-const inter = Inter({ subsets: ['latin'] })
+const images = [
+  { url: "/carousel-images/church.png" },
+  { url: "/carousel-images/church-people.png" },
+  { url: "/carousel-images/adoration.png" },
+  { url: "/carousel-images/father-kim.png" }
+]
 
 export default function Home() {
   return (
-    <>
-    
-    </>
+    <Box sx={{width: "100%"}}>
+      <Box>
+        <Carousel>
+          {images.map((image) => {
+            return <img src={image.url} alt="" width={100} height={650}/>
+          })}
+        </Carousel>
+      </Box>
+    </Box>
   )
 }
