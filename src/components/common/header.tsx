@@ -53,10 +53,22 @@ const DesktopHeader = (props: headerProps) => {
         </Typography>
       </Box>
       <Box sx={{ display: { xs: 'none', lg: 'flex' }, ml: 'auto'}}>
-        <Link href="/"><Button sx={{color: 'white', position: 'absolute', right: 580, top: 15,}}>Home</Button></Link>
-        <Link href="/stjoseph"><Button sx={{color: 'white', position: 'absolute', right: 460, top: 15,}}>St. Joseph</Button></Link>
-        <Link href="/ststephen"><Button sx={{color: 'white', position: 'absolute', right: 330, top: 15,}}>St. Stephen</Button></Link>
-        <Accordion variant="outlined" expanded={sacramentsExpanded} onClick={sacramentsClicked} sx={{display: 'block', justifyContent: 'center', backgroundColor: '#287DC4', color: 'white', position: 'absolute', right: 160, zIndex: 5, top: 10, border: 0}}>
+        <Link href="/"><Button sx={{color: 'white', position: 'absolute', right: 635, top: 15,}}>Home</Button></Link>
+        <Link href="/stjoseph"><Button sx={{color: 'white', position: 'absolute', right: 535, top: 15,}}>St. Joseph</Button></Link>
+        <Link href="/ststephen"><Button sx={{color: 'white', position: 'absolute', right: 425, top: 15,}}>St. Stephen</Button></Link>
+        <Accordion variant="outlined" sx={{display: 'block', justifyContent: 'center', backgroundColor: '#287DC4', color: 'white', position: 'absolute', right: 290, zIndex: 5, top: 10, border: 0}}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{color: 'white'}} />}
+            aria-controls="panel1a-content"
+          >
+            <Typography sx={{fontSize: '14px', color: 'white'}}>EDUCATION</Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{display: 'flex', flexDirection: 'column'}}>
+            <Link href="/education/cce"><Button sx={{color: 'white', textAlign: 'start'}}>CCE</Button></Link>
+            <Link href="/education/rcia"><Button sx={{color: 'white', textAlign: 'start'}}>RCIA</Button></Link>
+          </AccordionDetails>
+        </Accordion> 
+        <Accordion variant="outlined" expanded={sacramentsExpanded} onClick={sacramentsClicked} sx={{display: 'block', justifyContent: 'center', backgroundColor: '#287DC4', color: 'white', position: 'absolute', right: 145, zIndex: 5, top: 10, border: 0}}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{color: 'white'}} />}
             aria-controls="panel1a-content"
@@ -69,8 +81,7 @@ const DesktopHeader = (props: headerProps) => {
             <Link href="/sacraments/communion"><Button onClick={closeSacraments} sx={{color: 'white'}}>Communion</Button></Link>
             <Link href="/sacraments/confirmation"><Button onClick={closeSacraments} sx={{color: 'white'}}>Confirmation</Button></Link>
             <Link href="/sacraments/funerals"><Button onClick={closeSacraments} sx={{color: 'white'}}>Funerals</Button></Link>
-            <Link href="/sacraments/rcia"><Button onClick={closeSacraments} sx={{color: 'white'}}>RCIA&#160;&#160;</Button></Link>
-            <Link href="/sacraments/reconciliation"><Button onClick={closeSacraments} sx={{color: 'white'}}>Reconciliation</Button></Link>
+            <Link href="/sacraments/penance"><Button onClick={closeSacraments} sx={{color: 'white'}}>Penance</Button></Link>
             <Link href="/sacraments/weddings"><Button onClick={closeSacraments} sx={{color: 'white'}}>Weddings</Button></Link>
           </AccordionDetails>
         </Accordion> 
@@ -82,9 +93,8 @@ const DesktopHeader = (props: headerProps) => {
             <Typography sx={{fontSize: '14px', color: 'white'}}>LAY MINISTRIES</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{display: 'flex', flexDirection: 'column'}}>
-            <Button sx={{color: 'white'}}>
-              Knights of Columbus
-            </Button>
+            <Link href="/layministries/kc"><Button sx={{color: 'white', textAlign: 'start'}}>Knights of<br></br>Columbus</Button></Link>
+            <Link href="/layministries/svdp"><Button sx={{color: 'white', textAlign: 'start'}}>Saint Vincent<br></br>De Paul</Button></Link>
           </AccordionDetails>
         </Accordion> 
       </Box>
@@ -109,7 +119,7 @@ const MobileHeader = (props: headerProps) => {
         component="a"
         href="/"
         sx={{
-            mr: 2,
+            mr: {xs: 2, sm: 40, md: 80},
             ml: 'auto',
             display: { xs: 'block', md: 'flex', lg: 'none' },
             fontFamily: 'monospace',

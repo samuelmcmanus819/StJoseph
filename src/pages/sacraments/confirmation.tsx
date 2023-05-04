@@ -1,5 +1,5 @@
 import PageTitle from "@/components/common/pagetitle";
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box, List, ListItemText, Typography } from "@mui/material";
 
 const Baptism = () => {
   return (
@@ -24,10 +24,10 @@ const Baptism = () => {
           The decision to be confirmed will be made through a discernment process that will include the student, his/her parents and the Confirmation Team. Not all candidates for Confirmation will be recommended, or choose, to be confirmed in the year that they participate in the program.  The candidate may not feel ready, the parent may not feel the candidate is ready or the parish may not feel the candidate is ready.  The decision to be confirmed needs to be made with a desire for commitment to the faith community and to the mission of the Church.  Confirming the baptism of a young person who is not ready to be confirmed fosters an “empty” commitment to faith.<br></br><br></br>
         </Typography>
         <List sx={{ listStyleType: "disc", pl: 4 }}>
-          <ListItem sx={{ display: "list-item" }}>Each candidate will be responsible for participating in service opportunities that specifically center around the corporal and spiritual works of mercy.  Candidates are required to keep a journal of these experiences. Each Candidate will prayerfully reflect on their service experiences.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>All Candidates are required to participate in a Retreat.  This retreat will  build and strengthen relationships that students have with each other and the faith community.  Participation in the Entire Retreat is required for the Candidate’s reception of the Sacrament.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Each Candidate will meet with his/her Parish Mentor for serious dialogue regarding their understanding of Confirmation.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Each Candidate will be asked to complete several essay questions and/or a test that pertains to the preparation process at the conclusion of the sessions.</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>Each candidate will be responsible for participating in service opportunities that specifically center around the corporal and spiritual works of mercy.  Candidates are required to keep a journal of these experiences. Each Candidate will prayerfully reflect on their service experiences.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>All Candidates are required to participate in a Retreat.  This retreat will  build and strengthen relationships that students have with each other and the faith community.  Participation in the Entire Retreat is required for the Candidate’s reception of the Sacrament.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Each Candidate will meet with his/her Parish Mentor for serious dialogue regarding their understanding of Confirmation.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Each Candidate will be asked to complete several essay questions and/or a test that pertains to the preparation process at the conclusion of the sessions.</ListItemText>
         </List>
         <Typography>
           <b>For baptized Catholics who seek Confirmation as adults</b><br></br>
@@ -36,12 +36,12 @@ const Baptism = () => {
         <Typography variant="h5" fontWeight="bold" sx={{mt: "2vh", alignSelf: "start"}}>Qualifications of Candidates</Typography>
         <Typography>Each baptized Catholic has the right and the obligation to receive the Sacrament of Confirmation, but the candidate has the responsibility to personally choose to complete initiation into the faith life of the Church. The candidate may request the sacrament if he/she:</Typography>
         <List sx={{ listStyleType: "disc", pl: 4 }}>
-          <ListItem sx={{ display: "list-item" }}>Is baptized and able to renew baptismal promises, unless a grave reason suggests otherwise</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Exhibits an active faith life and knowledge of the Church</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Participates in the sacramental life of the Church, especially Eucharistic liturgies</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Is willing to commit to active involvement in the parish Confirmation catechesis</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Is willing to respond to the call to active ministry</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Is willing to continue to learn and grow in faith following Confirmation and throughout his/her lifetime</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>Is baptized and able to renew baptismal promises, unless a grave reason suggests otherwise</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Exhibits an active faith life and knowledge of the Church</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Participates in the sacramental life of the Church, especially Eucharistic liturgies</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Is willing to commit to active involvement in the parish Confirmation catechesis</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Is willing to respond to the call to active ministry</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Is willing to continue to learn and grow in faith following Confirmation and throughout his/her lifetime</ListItemText>
         </List>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Age of the Candidate</Typography>
         <Typography>
@@ -54,11 +54,11 @@ const Baptism = () => {
           To perform the role of sponsor, it is necessary that a person:
         </Typography>
         <List sx={{ listStyleType: "disc", pl: 4 }}>
-          <ListItem sx={{ display: "list-item" }}>Be designated by the one to be Confirmed, by the parents or the one who takes their place or, in their absence, by the pastor or minister and is to have the qualifications and intention of performing the role</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Have completed the sixteenth year, unless a different age has been established by the diocesan bishop or it seems to the pastor or minister that an exception is to be made for a just cause</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Be a Catholic who has been Confirmed and has already received the sacrament of the Eucharist and leads a life in harmony with faith and the role to be undertaken</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Not be bound by any canonical penalty legitimately imposed or declared</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Not be the father or the mother of the one to be Confirmed.</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>Be designated by the one to be Confirmed, by the parents or the one who takes their place or, in their absence, by the pastor or minister and is to have the qualifications and intention of performing the role</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Have completed the sixteenth year, unless a different age has been established by the diocesan bishop or it seems to the pastor or minister that an exception is to be made for a just cause</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Be a Catholic who has been Confirmed and has already received the sacrament of the Eucharist and leads a life in harmony with faith and the role to be undertaken</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Not be bound by any canonical penalty legitimately imposed or declared</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Not be the father or the mother of the one to be Confirmed.</ListItemText>
         </List>
         <Typography>
           More than one can be used but only one is designated as the liturgical sponsor, standing with the candidate at Confirmation<br></br><br></br>

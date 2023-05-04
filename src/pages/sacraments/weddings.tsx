@@ -1,5 +1,5 @@
 import PageTitle from "@/components/common/pagetitle";
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box, List, ListItemText, Typography } from "@mui/material";
 
 const RCIA = () => {
   return (
@@ -15,24 +15,23 @@ const RCIA = () => {
         <Typography>In validations, there is a need to review with the couple their relationship with the church, the religious training of any children and their motives for the requested validation. If in the case of pregnancy, the final decision to proceed with marriage, the preparation requirements are not to be altered to shorten the preparation time. In cases of cohabitation, the minister is to help the couple examine the realities of commitment, fidelity, and permanence.<br></br><br></br></Typography>
         <Typography sx={{alignSelf: "start"}}>The engaged couple shall:</Typography>
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: "start" }}>
-          <ListItem sx={{ display: "list-item" }}>Notify the Church of their intent to marry at least six months prior to the preferred wedding date.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Take a communication survey approved by the Diocese as the first step in preparation.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Acquire necessary documents as required by Canon and Civil law.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Comply with a mutually agreed upon schedule of appointments during the preparation time.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Enroll in and complete a marriage preparation program recommended by your marriage minister.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Collaborate with the priest, deacon, or other minister in preparing the liturgical celebration.</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>Notify the Church of their intent to marry at least six months prior to the preferred wedding date.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Take a communication survey approved by the Diocese as the first step in preparation.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Acquire necessary documents as required by Canon and Civil law.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Comply with a mutually agreed upon schedule of appointments during the preparation time.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Enroll in and complete a marriage preparation program recommended by your marriage minister.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Collaborate with the priest, deacon, or other minister in preparing the liturgical celebration.</ListItemText>
         </List>
         <Typography sx={{alignSelf: "start"}}>Seek counseling when:</Typography>
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: "start" }}>
-          <ListItem sx={{ display: "list-item" }}>One of the couple is under age 18</ListItem>
-          <ListItem sx={{ display: "list-item" }}>There is evidence of lack of maturity, compatibility or emotional stability</ListItem>
-          <ListItem sx={{ display: "list-item" }}>There is pregnancy involved with or prior to child birth</ListItem>
-          <ListItem sx={{ display: "list-item" }}>There is evidence of undue pressure to marry</ListItem>
-          <ListItem sx={{ display: "list-item" }}>A prior marriage is affecting expectations of the new relationship</ListItem>
-          <ListItem sx={{ display: "list-item" }}>There is an indication of current or past substance abuse by one or both parties</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>One of the couple is under age 18</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>There is evidence of lack of maturity, compatibility or emotional stability</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>There is pregnancy involved with or prior to child birth</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>There is evidence of undue pressure to marry</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>A prior marriage is affecting expectations of the new relationship</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>There is an indication of current or past substance abuse by one or both parties</ListItemText>
         </List>
         <Typography sx={{alignSelf: "start"}}><b>Call the parish office to make arrangements with the priest or deacon for marriage preparation - <a href={`tel:(936) 344-6104`}>(936) 344-6104</a></b></Typography>
-        
       </Box>
     </Box>
   )

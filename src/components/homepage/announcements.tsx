@@ -1,6 +1,7 @@
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
-import { Box, Button, Card, CardContent, Grid, IconButton, Typography } from "@mui/material";
+import { Box, Card, CardContent, IconButton, Typography } from "@mui/material";
 import { useState } from "react";
+import Link from "next/link";
 
 const Announcements = () => {
   const announcements = [{ 
@@ -38,16 +39,35 @@ const Announcements = () => {
         <Typography sx={{fontSize: "xx-large", pb: '3vh'}}>
           What's Happening
         </Typography>
-        <Box sx={{display: { xs: 'none', md: 'flex' }, flexDirection: 'row', justifyContent: 'center'}}>
+        <Box sx={{display: { xs: 'none', lg: 'flex' }, flexDirection: 'row', justifyContent: 'center'}}>
           <IconButton onClick={decrementIndex}>
             <ArrowBackIosNew fontSize="large" sx={{alignSelf: 'center', zIndex: 100}}/>
           </IconButton>
           {Array.of(announcements[index], announcements[(index + 1) % announcements.length], announcements[(index + 2) % announcements.length]).map(announcement => 
-            <Card sx={{mx: '1%', width: 300, height: '56vh'}}>
+            <Card sx={{mx: '1%', width: 300, height: { xl: '56vh', lg: '60vh' }}}>
               <img src={announcement.image} width={300} height={250}/>
               <CardContent>
                 <Typography sx={{fontWeight: 'bold', mb: '1vh'}}>{announcement.title}</Typography>
                 <Typography>{announcement.text && announcement.text?.length > 100 ? announcement.text?.substring(0, 99) + '...' : announcement.text}</Typography>
+                <Link href="documents/bulletin.pdf">Read More</Link>
+              </CardContent>
+            </Card>)}
+          <IconButton onClick={incrementIndex}>
+            <ArrowForwardIos fontSize="large" sx={{alignSelf: 'center'}} />
+          </IconButton>
+        </Box>
+
+        <Box sx={{display: { xs: 'none', md: 'flex', lg: 'none' }, flexDirection: 'row', justifyContent: 'center'}}>
+          <IconButton onClick={decrementIndex}>
+            <ArrowBackIosNew fontSize="large" sx={{alignSelf: 'center', zIndex: 100}}/>
+          </IconButton>
+          {Array.of(announcements[index], announcements[(index + 1) % announcements.length]).map(announcement => 
+            <Card sx={{mx: '1%', width: 300, height: '60vh'}}>
+              <img src={announcement.image} width={300} height={250}/>
+              <CardContent>
+                <Typography sx={{fontWeight: 'bold', mb: '1vh'}}>{announcement.title}</Typography>
+                <Typography>{announcement.text && announcement.text?.length > 100 ? announcement.text?.substring(0, 99) + '...' : announcement.text}</Typography>
+                <Link href="documents/bulletin.pdf">Read More</Link>
               </CardContent>
             </Card>)}
           <IconButton onClick={incrementIndex}>
@@ -60,11 +80,12 @@ const Announcements = () => {
             <ArrowBackIosNew fontSize="large" sx={{alignSelf: 'center', zIndex: 100}}/>
           </IconButton>
           {Array.of(announcements[index]).map(announcement => 
-            <Card sx={{mx: '1%', width: 300, height: '52vh'}}>
+            <Card sx={{mx: '1%', width: 300, height: '56vh'}}>
               <img src={announcement.image} width={300} height={250}/>
               <CardContent>
                 <Typography sx={{fontWeight: 'bold', mb: '1vh'}}>{announcement.title}</Typography>
                 <Typography>{announcement.text && announcement.text?.length > 100 ? announcement.text?.substring(0, 99) + '...' : announcement.text}</Typography>
+                <Link href="documents/bulletin.pdf">Read More</Link>
               </CardContent>
             </Card>)}
           <IconButton onClick={incrementIndex}>

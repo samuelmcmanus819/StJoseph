@@ -1,7 +1,7 @@
 import PageTitle from "@/components/common/pagetitle";
 import { Box, Typography } from "@mui/material";
 
-  const Annointing = () => {
+const Annointing = () => {
   return (
     <Box sx={{px: "10%"}}>
       <PageTitle title="Annointing of the Sick"/>
@@ -13,6 +13,6 @@ import { Box, Typography } from "@mui/material";
       </Box>
     </Box>
   )
-  }
+}
 
 export default Annointing;

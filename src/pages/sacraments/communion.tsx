@@ -1,5 +1,5 @@
 import PageTitle from "@/components/common/pagetitle";
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box, List, ListItemText, Typography } from "@mui/material";
 
   const Communion = () => {
   return (
@@ -24,11 +24,11 @@ import { Box, List, ListItem, Typography } from "@mui/material";
           The basic principles of the Sacramental Guidelines are:
         </Typography>
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: "start" }}>
-          <ListItem sx={{ display: "list-item" }}>Sacraments are celebrations of the community.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>The celebration of Eucharist is the culmination of initiation.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>The Baptized, when suitably prepared and properly disposed, have a right to Eucharist.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>The criteria for preparation and celebration is readiness (not age or grade level).</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Parents, in dialogue with the parish staff, have the right and responsibility to determine the readiness of their own child.</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>Sacraments are celebrations of the community.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>The celebration of Eucharist is the culmination of initiation.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>The Baptized, when suitably prepared and properly disposed, have a right to Eucharist.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>The criteria for preparation and celebration is readiness (not age or grade level).</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Parents, in dialogue with the parish staff, have the right and responsibility to determine the readiness of their own child.</ListItemText>
         </List>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Preparation for the Sacrament</Typography>
         <Typography>
@@ -54,25 +54,25 @@ import { Box, List, ListItem, Typography } from "@mui/material";
         </Typography>
         
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: "start" }}>
-          <ListItem sx={{ display: "list-item" }}>The family is the primary place where children are formed in faith.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Does your family participate in the life of the community in the areas of worship, formation (education) and service?</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Has your child received appropriate formation for his/her age?</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Does your family pray together at home?</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>The family is the primary place where children are formed in faith.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Does your family participate in the life of the community in the areas of worship, formation (education) and service?</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Has your child received appropriate formation for his/her age?</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Does your family pray together at home?</ListItemText>
         </List>
           <Typography sx={{alignSelf: "start"}}>The readiness of the individual involves the following:</Typography>
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: "start" }}>
-          <ListItem sx={{ display: "list-item" }}> Is the person baptized and does he/she have the use of reason (about the age of seven)?</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Does the person express a desire to celebrate Eucharist?</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Does the person participate in the worship life of the community on a regular basis?</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Has the person been formed in faith in an age appropriate manner?</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Is there a commitment from this person to continue formation and participation in the worship life of the community?</ListItem>
-          <ListItem sx={{ display: "list-item" }}>Can the person distinguish Eucharist from ordinary bread?</ListItem>
+          <ListItemText sx={{ display: "list-item" }}> Is the person baptized and does he/she have the use of reason (about the age of seven)?</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Does the person express a desire to celebrate Eucharist?</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Does the person participate in the worship life of the community on a regular basis?</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Has the person been formed in faith in an age appropriate manner?</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Is there a commitment from this person to continue formation and participation in the worship life of the community?</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>Can the person distinguish Eucharist from ordinary bread?</ListItemText>
         </List>
         <Typography sx={{alignSelf: "start"}}>Because sacraments are community celebrations, the parish also has a responsibility in sacramental preparation.</Typography>
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: "start" }}>
-          <ListItem sx={{ display: "list-item" }}>The parish provides you (parents) with the necessary support and information to enable you to fulfill your role as primary educator of your child.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>The parish provides opportunities for life-long faith formation.</ListItem>
-          <ListItem sx={{ display: "list-item" }}>The parish community welcome children into its life.</ListItem>
+          <ListItemText sx={{ display: "list-item" }}>The parish provides you (parents) with the necessary support and information to enable you to fulfill your role as primary educator of your child.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>The parish provides opportunities for life-long faith formation.</ListItemText>
+          <ListItemText sx={{ display: "list-item" }}>The parish community welcome children into its life.</ListItemText>
         </List>
       </Box>
     </Box>
