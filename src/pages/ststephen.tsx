@@ -1,6 +1,6 @@
-import PageTitle from "@/components/cross-platform/common/pagetitle";
-import StStephenMap from "@/components/cross-platform/ststephen/map";
-import StStephenSchedule from "@/components/cross-platform/ststephen/schedule";
+import PageTitle from "@/components/common/pagetitle";
+import StStephenMap from "@/components/ststephen/map";
+import StStephenSchedule from "@/components/ststephen/schedule";
 import { Box } from "@mui/material";
 
 const StStephen = () => {

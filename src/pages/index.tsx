@@ -1,9 +1,7 @@
-import HomepageMainContent from '@/components/cross-platform/homepage/main';
-import DesktopCarousel from '@/components/desktop/homepage/carousel';
-import Footer from '@/components/footer';
-import MobileCarousel from '@/components/mobile/homepage/carousel';
+import HomepageMainContent from '@/components/homepage/main';
 import { Box } from '@mui/material'
 import 'react-slideshow-image/dist/styles.css'
+import Slideshow from '@/components/homepage/slideshow';
 
 
 const images = ["/carousel-images/church.png","/carousel-images/church-people.png", "/carousel-images/adoration.png", "/carousel-images/father-kim.png"]
@@ -11,8 +9,7 @@ const images = ["/carousel-images/church.png","/carousel-images/church-people.pn
 export default function Home() {
   return (
     <Box sx={{width: "100%", height: "20%"}}>
-      <DesktopCarousel images={images}/>
-      <MobileCarousel images={images}/>
+      <Slideshow images={images}/>
       <HomepageMainContent />
     </Box>
   )

@@ -1,7 +1,7 @@
-import PageTitle from "@/components/cross-platform/common/pagetitle";
-import About from "@/components/cross-platform/stjoseph/about";
-import StJosephMap from "@/components/cross-platform/stjoseph/map";
-import StJosephSchedule from "@/components/cross-platform/stjoseph/schedule";
+import PageTitle from "@/components/common/pagetitle";
+import About from "@/components/stjoseph/about";
+import StJosephMap from "@/components/stjoseph/map";
+import StJosephSchedule from "@/components/stjoseph/schedule";
 import { Box, Typography } from "@mui/material"
 
 const StJoseph = () => {
