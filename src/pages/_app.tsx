@@ -9,7 +9,7 @@ export default function App ({ Component, pageProps }: AppProps) {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth={false}>
         <Toolbar disableGutters>
           <DesktopHeader pages={pages}/>
           <MobileHeader pages={pages}/>
