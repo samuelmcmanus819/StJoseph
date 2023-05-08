@@ -13,7 +13,8 @@ const theme = createTheme({
       dark: '#074C86'
     },
     secondary: {
-      main: '#D3D2D2'
+      main: '#D3D2D2',
+      dark: '#BAB8B8'
     },
     background: {
       default: '#FEFFFE',
@@ -22,6 +23,9 @@ const theme = createTheme({
   typography: {
     h4: {
       fontSize: "14px"
+    },
+    button: {
+      textTransform: 'none'
     }
   }
 })
