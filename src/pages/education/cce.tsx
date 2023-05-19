@@ -15,10 +15,10 @@ const CCE = () => {
         <Typography sx={{alignSelf: "start"}}>The director of the religious education guides the direction and focus for the religious education programs that are available for our children.<br></br><br></br></Typography>
         <Typography variant='h5' sx={{pt: "2vh", alignSelf: 'start'}}>Additional Links</Typography>
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: 'start' }}>
-          <ListItemText sx={{ display: "list-item" }}>To register your child for CCE, please fill out the CCE Registration Form and bring it with you on the day of registration.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>To begin the process of first communion, please fill out the Communion Information Form and bring it to the office.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>To begin the process of confirmation, please fill out the Confirmation Information Form and bring it to the office.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>For more information on the class schedule, please see the Calendar.</ListItemText>
+          <ListItemText key="1" sx={{ display: "list-item" }}>To register your child for CCE, please fill out the <a download href="/forms/cce_registration.rtf">CCE Registration Form</a> and bring it with you on the day of registration.</ListItemText>
+          <ListItemText key="2" sx={{ display: "list-item" }}>To begin the process of first communion, please fill out the <a download href="/forms/first_communion_form.rtf">Communion Information Form</a> and bring it to the office.</ListItemText>
+          <ListItemText key="3" sx={{ display: "list-item" }}>To begin the process of confirmation, please fill out the <a download href="/forms/confirmation_form.rtf">Confirmation Information Form</a> and bring it to the office.</ListItemText>
+          <ListItemText key="4" sx={{ display: "list-item" }}>For more information on the class schedule, please see the <a download href="/forms/calendar_2019-2020.xlsx">Calendar.</a></ListItemText>
         </List>
       </Box>
     </Box>

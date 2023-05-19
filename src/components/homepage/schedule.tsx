@@ -6,8 +6,8 @@ const Schedule = () => {
         <Typography sx={{fontSize: "xx-large", borderBottom: .5, borderColor: 'primary.dark', pl: 2, display: { xs: 'none', md: 'block' }, color: 'primary.dark', fontWeight: 'bold'}} >
           Mass and Reconciliation
         </Typography>
-        <Grid container sx={{mt: { xs: "0vh", md: "3vh"}, display: 'flex', justifyContent: 'center', textAlign: 'center'}}>
-          <Grid xs={8} md={4} sx={{ py: "1vh" }}>
+        <Grid container item={true} sx={{mt: { xs: "0vh", md: "3vh"}, display: 'flex', justifyContent: 'center', textAlign: 'center'}}>
+          <Grid xs={8} md={4} item={true} sx={{ py: "1vh" }}>
             <Typography sx={{fontSize: { xs: "x-large", md: "large", xl: "x-large" }, px: "2vh", fontWeight: "bold", color: 'primary.dark'}}>
               St. Joseph Mass
             </Typography>
@@ -33,7 +33,7 @@ const Schedule = () => {
               11:00 AM - Spanish
             </Typography>
           </Grid>
-          <Grid xs={8} md={4} sx={{py: "1vh"}}>
+          <Grid xs={8} md={4} item={true} sx={{py: "1vh"}}>
             <Typography sx={{fontSize: { xs: "x-large", md: "large", xl: "x-large" }, px: "2vh", fontWeight: "bold", color: 'primary.dark'}}>
               St. Stephen Mass
             </Typography>
@@ -44,7 +44,7 @@ const Schedule = () => {
               4:30 PM - English
             </Typography>
           </Grid>
-          <Grid xs={8} md={4} sx={{ py: "1vh" }}>
+          <Grid xs={8} md={4} item={true} sx={{ py: "1vh" }}>
             <Typography sx={{fontSize: { xs: "x-large", md: "large", xl: "x-large" }, px: "2vh", fontWeight: "bold", color: 'primary.dark'}}>
               Reconciliation
             </Typography>

@@ -49,8 +49,8 @@ const SVDP = () => {
         <Typography>St. Vincent de Paul has a team of dedicated volunteers who work tirelessly to meet the needs of the community. St. Vincent de Paul is always open to new members. Additionally, non-members are always welcome to assist with working at or donating to the food pantry.<br></br><br></br></Typography>
         <Typography variant='h5' sx={{pt: "2vh", alignSelf: 'start'}}>Additional Links</Typography>
         <List sx={{ listStyleType: "disc", pl: 4, alignSelf: 'start', pb: '5vh'}}>
-          <ListItemText sx={{ display: "list-item" }}>If you need food assistance, then please fill out the Assistance Request form and bring it to the food pantry distribution.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>To become a member, please fill out the Member Application form and bring it to any of our events.</ListItemText>
+          <ListItemText key="1" sx={{ display: "list-item" }}>If you need food assistance, then please fill out the Assistance Request form and bring it to the food pantry distribution.</ListItemText>
+          <ListItemText key="2" sx={{ display: "list-item" }}>To become a member, please fill out the Member Application form and bring it to any of our events.</ListItemText>
         </List>
       </Box>
     </Box>

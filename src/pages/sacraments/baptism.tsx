@@ -21,12 +21,12 @@ const Baptism = () => {
         </Typography>  
         <Typography variant="h5" fontWeight="bold" sx={{mt: "2vh", alignSelf: "start"}}>Basic Requirements for Parents</Typography>
         <List sx={{ listStyleType: "disc", pl: 4 }}>
-          <ListItemText sx={{ display: "list-item" }}>Parents who are registered members are to contact the church office in the 4th or 5th month of pregnancy</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>Parents must set up an appointment to meet with the priest or deacon in order to fix the date of the Baptism and fill in the necessary questionnaire.  Call the church office to make arrangements.  The  priest or deacon will contact you  to set an appointment.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>Parents who are Catholics but are not married in a Catholic Church (Civil Marriage) are required to contact the priest about validation of their marriage.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>Both parents are expected to be aware of the ritual of the Baptism Sacrament and the godparents too must be made aware of their responsibilities.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>It is customary in the Catholic Church to have one godmother and one godfather. Godparents must be Catholic, above 16 years of age, and have received the three sacraments of initiation (that is Baptism, Confirmation and Eucharist). Godparents must be actively practicing their faith.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>Baptism may be delayed or postponed for non-compliance with any of above and for non-practice of the Catholic faith.</ListItemText>
+          <ListItemText key="1" sx={{ display: "list-item" }}>Parents who are registered members are to contact the church office in the 4th or 5th month of pregnancy</ListItemText>
+          <ListItemText key="2" sx={{ display: "list-item" }}>Parents must set up an appointment to meet with the priest or deacon in order to fix the date of the Baptism and fill in the necessary questionnaire.  Call the church office to make arrangements.  The  priest or deacon will contact you  to set an appointment.</ListItemText>
+          <ListItemText key="3" sx={{ display: "list-item" }}>Parents who are Catholics but are not married in a Catholic Church (Civil Marriage) are required to contact the priest about validation of their marriage.</ListItemText>
+          <ListItemText key="4" sx={{ display: "list-item" }}>Both parents are expected to be aware of the ritual of the Baptism Sacrament and the godparents too must be made aware of their responsibilities.</ListItemText>
+          <ListItemText key="5" sx={{ display: "list-item" }}>It is customary in the Catholic Church to have one godmother and one godfather. Godparents must be Catholic, above 16 years of age, and have received the three sacraments of initiation (that is Baptism, Confirmation and Eucharist). Godparents must be actively practicing their faith.</ListItemText>
+          <ListItemText key="6" sx={{ display: "list-item" }}>Baptism may be delayed or postponed for non-compliance with any of above and for non-practice of the Catholic faith.</ListItemText>
         </List>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Baptism Information</Typography>
         <Typography>
@@ -51,21 +51,21 @@ const Baptism = () => {
         According to Canon Law:
         </Typography>
         <List sx={{ listStyleType: "disc", pl: 4 }}>
-          <ListItemText sx={{ display: "list-item" }}>A godparent for a Catholic Baptism must be a fully initiated practicing Catholic. Non-Catholics may not serve as godparents for a Catholic Baptism.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>At least one godparent is required; no more than two (one male and one female) are allowed.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>The Godparent needs to be a practicing Catholic who is at least sixteen (16) years of age.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>The godparent must be fully initiated in the Catholic Church, that is, they must have received the sacraments of Baptism, First Communion, and Confirmation.  Regular attendance at Mass is expected.  Regular participation in the Sacrament of Reconciliation is encouraged.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>If married, the godparent needs to be in a marriage considered valid in the Catholic Church. This may be proved with a recent copy of the person’s Baptismal certificate; the godparents may be asked to provide this document to the Church Office.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>In order to prepare for the celebration of this sacrament, we ask that godparents attend Baptism classes (here or elsewhere).</ListItemText>
+          <ListItemText key="1" sx={{ display: "list-item" }}>A godparent for a Catholic Baptism must be a fully initiated practicing Catholic. Non-Catholics may not serve as godparents for a Catholic Baptism.</ListItemText>
+          <ListItemText key="2" sx={{ display: "list-item" }}>At least one godparent is required; no more than two (one male and one female) are allowed.</ListItemText>
+          <ListItemText key="3" sx={{ display: "list-item" }}>The Godparent needs to be a practicing Catholic who is at least sixteen (16) years of age.</ListItemText>
+          <ListItemText key="4" sx={{ display: "list-item" }}>The godparent must be fully initiated in the Catholic Church, that is, they must have received the sacraments of Baptism, First Communion, and Confirmation.  Regular attendance at Mass is expected.  Regular participation in the Sacrament of Reconciliation is encouraged.</ListItemText>
+          <ListItemText key="5" sx={{ display: "list-item" }}>If married, the godparent needs to be in a marriage considered valid in the Catholic Church. This may be proved with a recent copy of the person’s Baptismal certificate; the godparents may be asked to provide this document to the Church Office.</ListItemText>
+          <ListItemText key="6" sx={{ display: "list-item" }}>In order to prepare for the celebration of this sacrament, we ask that godparents attend Baptism classes (here or elsewhere).</ListItemText>
         </List>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Baptism Classes</Typography>
         <Typography>
         Baptism interviews are normally held on the last Tuesday of the month with classes scheduled following the interview.  Classes are normally held in the Large Meeting Room in the Office Building.<br></br><br></br>
         <List sx={{ listStyleType: "disc", pl: 4, mt: -2 }}>
-          <ListItemText sx={{ display: "list-item" }}>Attendance at classes is expected.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>Registration for the classes is required.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>Both parents and godparents should attend classes.</ListItemText>
-          <ListItemText sx={{ display: "list-item" }}>If the classes are taken at another parish, a letter stating that they were completed is requested.</ListItemText>
+          <ListItemText key="1" sx={{ display: "list-item" }}>Attendance at classes is expected.</ListItemText>
+          <ListItemText key="2" sx={{ display: "list-item" }}>Registration for the classes is required.</ListItemText>
+          <ListItemText key="3" sx={{ display: "list-item" }}>Both parents and godparents should attend classes.</ListItemText>
+          <ListItemText key="4" sx={{ display: "list-item" }}>If the classes are taken at another parish, a letter stating that they were completed is requested.</ListItemText>
         </List>
         We do offer our classes for those who are having their children baptized in another parish. Please stop by the Church Office to register for Baptism Classes only.  A Certificate/Letter will be provided upon successful attendance at the classes.<br></br><br></br>
 

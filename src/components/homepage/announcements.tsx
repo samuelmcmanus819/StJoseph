@@ -44,7 +44,7 @@ const Announcements = () => {
             <ArrowBackIosNew fontSize="large" sx={{alignSelf: 'center', zIndex: 100}}/>
           </IconButton>
           {Array.of(announcements[index], announcements[(index + 1) % announcements.length], announcements[(index + 2) % announcements.length]).map(announcement => 
-            <Card sx={{mx: '1%', width: 300, height: { xl: '56vh', lg: '60vh' }}}>
+            <Card key={announcement.title} sx={{mx: '1%', width: 300, height: { xl: '56vh', lg: '60vh' }}}>
               <img src={announcement.image} width={300} height={250}/>
               <CardContent>
                 <Typography sx={{fontWeight: 'bold', mb: '1vh'}}>{announcement.title}</Typography>
@@ -62,7 +62,7 @@ const Announcements = () => {
             <ArrowBackIosNew fontSize="large" sx={{alignSelf: 'center', zIndex: 100}}/>
           </IconButton>
           {Array.of(announcements[index], announcements[(index + 1) % announcements.length]).map(announcement => 
-            <Card sx={{mx: '1%', width: 300, height: '60vh'}}>
+            <Card key={announcement.title} sx={{mx: '1%', width: 300, height: '60vh'}}>
               <img src={announcement.image} width={300} height={250}/>
               <CardContent>
                 <Typography sx={{fontWeight: 'bold', mb: '1vh'}}>{announcement.title}</Typography>
@@ -80,7 +80,7 @@ const Announcements = () => {
             <ArrowBackIosNew fontSize="large" sx={{alignSelf: 'center', zIndex: 100}}/>
           </IconButton>
           {Array.of(announcements[index]).map(announcement => 
-            <Card sx={{mx: '1%', width: 300, height: '56vh'}}>
+            <Card key={announcement.title} sx={{mx: '1%', width: 300, height: '56vh'}}>
               <img src={announcement.image} width={300} height={250}/>
               <CardContent>
                 <Typography sx={{fontWeight: 'bold', mb: '1vh'}}>{announcement.title}</Typography>
