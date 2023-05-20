@@ -40,7 +40,7 @@ const Baptism = () => {
         </Typography>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Instructions to Parents</Typography>
         <Typography sx={{alignSelf: "start"}}>
-          Meet with the priest or deacon to complete the registration form for Baptism at the Church Office.<br></br><br></br>
+          Meet with the priest or deacon to complete the <a download href="/forms/prebaptism_form.pdf">registration form</a> for Baptism at the Church Office.<br></br><br></br>
 
           Provide the child’s birth certificate (prior to the Baptism); a copy will be made in the Church Office and the original returned to you.<br></br><br></br>
 

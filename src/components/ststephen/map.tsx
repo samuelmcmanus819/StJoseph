@@ -1,12 +1,12 @@
-import { AccessTime, LocationOn, Mail, PhoneIphone } from "@mui/icons-material";
+import { LocationOn, Mail, PhoneIphone } from "@mui/icons-material";
 import { Box, Grid, Typography } from "@mui/material";
 
 const StStephenMap = () => {
     return (
-      <Box sx={{mt: "4vh", display: "flex", flexDirection: { xs: "column", lg: "row" }, px: '17%', textAlign: 'start', width: "100%", alignItems: {  xs: "center", lg: "inherit" }}}>
+      <Box sx={{mt: "4vh", display: "flex", flexDirection: { xs: "column", lg: "row" }, px: '17%', textAlign: 'start', width: "100%", alignItems: {  xs: "center", lg: "start" }}}>
         <Grid container sx={{width: { xs: "100%", lg: "50%" }, mb: { xs: "4vh", lg: 0 }}}>
           <Grid sx={{display: "flex", flexDirection: "column", justifyContent: "center", width: "100%", alignItems: { xs: "center", lg: "inherit" }}}>
-            <Typography variant="h3">Office Hours</Typography>
+            <Typography variant="h3">Visit Us</Typography>
             <Box sx={{display: "flex", flexDirection: "row", mt: "4vh", width: 280, justifyContent: "start"}}>
               <LocationOn fontSize="large" sx={{mr: "2%"}} />
               <Typography variant="h6">
@@ -18,16 +18,6 @@ const StStephenMap = () => {
               <PhoneIphone fontSize="large" sx={{mr: "2%"}}/>
               <Typography variant="h6">
                 (936) 344-6104
-              </Typography>
-            </Box>
-            <Box sx={{display: "flex", flexDirection: "row", mt: "2.5vh", width: 280, justifyContent: "start"}}>
-              <AccessTime fontSize="large" sx={{mr: "2%"}}/>
-              <Typography variant="h6">
-                Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                   1 PM - 5 PM<br></br>
-                Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        8 AM - 5 PM<br></br>
-                Wednesday &nbsp;                                                    8 AM - 5 PM<br></br>
-                Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                             1 PM - 5 PM<br></br>
-                Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8 AM - 4 PM
               </Typography>
             </Box>
             <Box sx={{display: "flex", flexDirection: "row", mt: "2.5vh", width: 280, justifyContent: "start"}}>
