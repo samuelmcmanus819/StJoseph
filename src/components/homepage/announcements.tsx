@@ -2,28 +2,10 @@ import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
 import { Box, Card, CardContent, IconButton, Typography } from "@mui/material";
 import { useState } from "react";
 import Link from "next/link";
+import jsonData from '../../../public/announcements/announcements.json'
 
 const Announcements = () => {
-  const announcements = [{ 
-                          title: 'CCE News',
-                          text: 'No CCE Classes Wednesday Nov. 23. On Sunday, December 18, 2022, the CCE Program is planning to present a Christmas Sing Along with a Pot Luck Luncheon after the 11:00 AM Mass. Parents, we need your help. We would like for all of our CCE students to participate in the Christmas Sing Along. Practice will be Sunday Nov. 27, Dec. 4, and Dec. 11 after the 11:00am Mass.', 
-                          image: 'carousel-images/adoration.png' 
-                        }, 
-                        { 
-                          title: 'Adoration of the Blessed Sacrament',
-                          text: 'Blessed Sacrament from Nov. 23 - Nov. 27 in observance of Thanksgiving Day. Volunteers are needed for morning, afternoon, and especially evening hours and Thursdays. Anyone wishing to dedicate an hour of prayer to the Blessed Sacrament, contact: Charlotte Schrader or Liz Billnoske.', 
-                          image: 'carousel-images/father-kim.png' 
-                        }, 
-                        {  
-                          title: 'Volunteers Needed to Decorate for Christmas',
-                          text: 'We need help decorating the exterior of the church. The decorations are already bought and stored in the storage building. We need help setting it up in December and then taking them down in January. If youre interested, contact Liz at the parish office',
-                          image: 'next.svg'
-                        },
-                        {  
-                          title: 'Volunteers Needed to Decorate for Christmas',
-                          text: 'We need help decorating the exterior of the church. The decorations are already bought and stored in the storage building. We need help setting it up in December and then taking them down in January. If youre interested, contact Liz at the parish office',
-                          image: 'next.svg'
-                        }]
+  const announcements = JSON.parse(JSON.stringify(jsonData))
   const [index, setIndex] = useState(0);
 
   const incrementIndex = () => {

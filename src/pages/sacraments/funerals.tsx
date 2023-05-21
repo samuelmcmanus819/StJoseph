@@ -1,5 +1,5 @@
 import PageTitle from "@/components/common/pagetitle";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const Funerals = () => {
   return (
