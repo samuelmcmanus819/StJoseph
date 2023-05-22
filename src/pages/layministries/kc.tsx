@@ -40,10 +40,6 @@ const KnightsofColumbus = () => {
                     Third Thursday - 7-8 PM
                   </Typography>
               </Box>
-              <Box sx={{display: "flex", flexDirection: "row", mt: "2.5vh", width: 280, justifyContent: "start"}}>
-                  <Mail fontSize="large" sx={{mr: "2%"}}/>
-                  <Typography variant="h6">TBD</Typography>
-              </Box>
             </Grid>
           </Grid>
           <Box sx={{display: "flex", width: '100%'}}>

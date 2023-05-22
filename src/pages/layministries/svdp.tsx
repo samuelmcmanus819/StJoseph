@@ -7,7 +7,7 @@ const SVDP = () => {
       <PageTitle title="Saint Vincent de Paul"/>
       <Box sx={{px: { xs: 0, md: "16%" }, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <img src="/layministries/svdp.jpeg" width={450}/>
-        <Box sx={{direction: 'flex', flexDirection: 'column', px: '15%', width: '100%', pt: '3vh', pb: '1vh'}}>
+        <Box sx={{direction: 'flex', flexDirection: 'column', px: '10%', width: '100%', pt: '3vh', pb: '1vh'}}>
           <Grid container sx={{mt: { xs: "0vh", md: "3vh"}, display: 'flex', justifyContent: 'center', textAlign: 'center'}}>
             <Grid xs={8} md={4} sx={{ py: "1vh" }}>
               <Typography sx={{fontSize: { xs: "x-large", md: "large", xl: "x-large" }, px: "2vh", fontWeight: "bold", color: 'primary.dark'}}>
