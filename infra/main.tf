@@ -9,6 +9,7 @@ resource "aws_amplify_app" "stjoseph" {
       phases:
         preBuild:
           commands:
+	    - cd website
             - yarn install
         build:
           commands:
