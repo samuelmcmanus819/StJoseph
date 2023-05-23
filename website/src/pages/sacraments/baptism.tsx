@@ -11,7 +11,7 @@ const Baptism = () => {
           Introduction
         </Typography>
         <Typography>
-          Christian initiation is accomplished by three sacraments together:  Baptism which is the beginning of new life; Confirmation which is its strengthening; and the Eucharist which nourishes the disciple with Christ's Body and Blood for his transformation in Christ. (CCC 1275)<br></br><br></br>
+          Christian initiation is accomplished by three sacraments together:  Baptism which is the beginning of new life; Confirmation which is its strengthening; and the Eucharist which nourishes the disciple with Christ&apos;s Body and Blood for his transformation in Christ. (CCC 1275)<br></br><br></br>
 
           The Sacrament of Baptism is the initial sacrament of faith.  In this sacrament, the person is immersed in to the passion, death and resurrection of Christ (Paul-Romans).  The effects of Original Sin are combated in that Baptism.  Baptism transforms the relationship between God and the believer and His light brings us out of darkness into the splendor of God&#39;s kingdom of light.  Through the waters of Baptism we enter a new kind of life, the life of the spirit.<br></br><br></br>    
 
@@ -32,7 +32,7 @@ const Baptism = () => {
         <Typography>
           Arrangements for Baptism are to be made through a personal conversation with the parish priest or designated minister &#8208; prior to the Baptism. Parents and godparents must attend baptism classes.<br></br><br></br>                   
 
-          Parents who are seeking Baptism for their children are asking that their son/daughter be initiated into the Catholic Community and the local Church Community of St. Joseph. The Church baptizes infants/children on the faith of the parents. The ideal is that parents have a deep faith, which they actively live out in the experience of the Catholic Church Community.  Children's faith is learned from their parents.<br></br><br></br>
+          Parents who are seeking Baptism for their children are asking that their son/daughter be initiated into the Catholic Community and the local Church Community of St. Joseph. The Church baptizes infants/children on the faith of the parents. The ideal is that parents have a deep faith, which they actively live out in the experience of the Catholic Church Community.  Children&apos;s faith is learned from their parents.<br></br><br></br>
         </Typography>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Parents</Typography>
         <Typography>
