@@ -63,7 +63,7 @@ const Baptism = () => {
         <Typography>
           More than one can be used but only one is designated as the liturgical sponsor, standing with the candidate at Confirmation<br></br><br></br>
         
-          A proxy may be used, but it is recommended that someone nearby be chosen to sponsor, so that he/she can become more involved in the candidate's preparatio
+          A proxy may be used, but it is recommended that someone nearby be chosen to sponsor, so that he/she can become more involved in the candidate&apos;s preparatio
         </Typography>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Parents</Typography>
         <Typography sx={{alignSelf: "start"}}>
@@ -83,7 +83,7 @@ const Baptism = () => {
         </Typography>
         <Typography variant="h5" fontWeight="bold" sx={{mt: "1vh", alignSelf: "start"}}>Taking Another Name</Typography>
         <Typography>
-          As greater emphasis is placed on the intimate connection between Baptism and Confirmation, the Baptismal name is seen as having greater significance. Candidates may choose a Confirmation name if they so desire. This is especially true if the Baptism name is not a saint's name.
+          As greater emphasis is placed on the intimate connection between Baptism and Confirmation, the Baptismal name is seen as having greater significance. Candidates may choose a Confirmation name if they so desire. This is especially true if the Baptism name is not a saint&apos;s name.
         </Typography>
       </Box>
       

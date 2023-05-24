@@ -19,7 +19,7 @@ import { Box, List, ListItemText, Typography } from "@mui/material";
 
           From the earliest days the community has gathered around the Eucharistic table. &quot;Initiated into the Christian mystery by Baptism and Confirmation, Christians are fully joined to the Body of Christ in the Eucharist (National Catechetical Directory , # 120).<br></br><br></br>
 
-          The Eucharist is of such importance in our lives as faithful people that the Second Vatican Council stated that the Eucharist is &quot;the source and summit of the Christian life (Lumen Gentium, 11)."<br></br><br></br>
+          The Eucharist is of such importance in our lives as faithful people that the Second Vatican Council stated that the Eucharist is &quot;the source and summit of the Christian life (Lumen Gentium, 11).&quot;<br></br><br></br>
 
           The basic principles of the Sacramental Guidelines are:
         </Typography>
