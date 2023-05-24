@@ -18,7 +18,7 @@ const About = () => {
           <Typography>
             Our Prime mission is to respond to our baptismal call to live and spread Gods good news in scripture and our valued traditions through the celebration of the Sacraments of the Church instituted by Jesus Christ, especially our Sunday Eucharist, which inspires all within the parish  family to draw together into the body of Christ.
             <br></br><br></br>
-            We recognize our sacred duty to spread the Gospel of Jesus Christ and Christian values, to share our faith with all especially the young and the non-believers and to assist those who need our help and compassion while working towards sanctification and eternal salvation through God's grace.
+            We recognize our sacred duty to spread the Gospel of Jesus Christ and Christian values, to share our faith with all especially the young and the non-believers and to assist those who need our help and compassion while working towards sanctification and eternal salvation through God&apos;s grace.
           </Typography>
         </Box>
         <img src="stjoseph.jpeg" width={500} height={400}/>
