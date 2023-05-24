@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 
 const Annointing = () => {
   return (
-    <Box sx={{px: "10%"}}>
+    <Box sx={{px: "10%", pb: "4vh", alignItems: 'center'}}>
       <PageTitle title="Annointing of the Sick"/>
       <Box sx={{px: { xs: 0, md: "16%" }, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <img src="/sacraments/annointing.jpg" width={150}/>

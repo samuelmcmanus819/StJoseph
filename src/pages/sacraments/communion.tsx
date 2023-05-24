@@ -3,11 +3,11 @@ import { Box, List, ListItemText, Typography } from "@mui/material";
 
   const Communion = () => {
   return (
-    <Box sx={{px: "10%", pb: "4vh"}}>
+    <Box sx={{px: "10%", pb: "4vh", alignItems: 'center'}}>
       <PageTitle title="Communion"/>
       <Box sx={{px: { xs: 0, md: "16%" }, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <img src="/sacraments/communion.jpg" width={150}/>
-        <Typography variant="h5" fontWeight="bold" sx={{mb: "2vh", alignSelf: "start"}}>
+        <Typography variant="h5" fontWeight="bold" sx={{my: "2vh", alignSelf: "start"}}>
           Introduction
         </Typography>
         <Typography>

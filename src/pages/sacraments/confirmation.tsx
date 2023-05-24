@@ -3,11 +3,11 @@ import { Box, List, ListItemText, Typography } from "@mui/material";
 
 const Baptism = () => {
   return (
-    <Box sx={{px: "10%", pb: "4vh"}}>
+    <Box sx={{px: "10%", pb: "4vh", alignItems: 'center'}}>
       <PageTitle title="Confirmation"/>
       <Box sx={{px: { xs: 0, md: "16%" }, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'start'}}>
         <img src="/sacraments/confirmation.jpg" width={150}/>
-        <Typography variant="h5" fontWeight="bold" sx={{mb: "2vh", alignSelf: "start"}}>Introduction</Typography>
+        <Typography variant="h5" fontWeight="bold" sx={{my: "2vh", alignSelf: "start"}}>Introduction</Typography>
         <Typography>
           This process is for Catholics who have already celebrated the other two Sacraments of Initiation (Baptism and Eucharist) and have received religious education in the past 2 years.<br></br><br></br>
 
@@ -19,7 +19,7 @@ const Baptism = () => {
 
           This gift of the Holy Spirit conforms believers more perfectly to Christ and strengthens them so that they may bear witness to Christ for the building up of His Body in faith and love. They are so marked with the character or seal of the Lord that the Sacrament of Confirmation cannot be repeated.
         </Typography>  
-        <Typography variant="h5" fontWeight="bold" sx={{mb: "2vh", alignSelf: "start"}}>Overview</Typography>
+        <Typography variant="h5" fontWeight="bold" sx={{my: "2vh", alignSelf: "start"}}>Overview</Typography>
         <Typography>
           The decision to be confirmed will be made through a discernment process that will include the student, his/her parents and the Confirmation Team. Not all candidates for Confirmation will be recommended, or choose, to be confirmed in the year that they participate in the program.  The candidate may not feel ready, the parent may not feel the candidate is ready or the parish may not feel the candidate is ready.  The decision to be confirmed needs to be made with a desire for commitment to the faith community and to the mission of the Church.  Confirming the baptism of a young person who is not ready to be confirmed fosters an &quot;empty&quot; commitment to faith.<br></br><br></br>
         </Typography>

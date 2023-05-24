@@ -5,7 +5,7 @@ const RCIA = () => {
   return (
     <Box sx={{px: "10%"}}>
       <PageTitle title="Weddings"/>
-      <Box sx={{px: { xs: 0, md: "16%" }, display: 'flex', flexDirection: 'column', alignItems: 'center', mb: "4vh"}}>
+      <Box sx={{px: { xs: 0, md: "16%" }, display: 'flex', flexDirection: 'column', alignItems: 'center', my: "4vh"}}>
         <img src="/sacraments/weddings.png" width={200}/>
         <Typography variant="h5" fontWeight="bold" sx={{mb: "2vh", alignSelf: "start"}}>Planning for Weddings</Typography>
         <Typography sx={{pt: "2vh"}}>The sacrament of matrimony is reserved for those Catholics who are registered, attending, and supporting the parish for at least one year. Arrangements should be made with the priest or deacon of your intent to marry at least six months prior to the preferred wedding date. The celebration of marriage between two Catholics should normally be celebrated during Mass.<br></br><br></br></Typography>
